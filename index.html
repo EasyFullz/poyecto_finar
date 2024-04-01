@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style-reset.css">
+    <link rel="icon" href="img/logo-finar-removebg-preview.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.adobe.com/fonts/cofo-gothic-variable">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src="https://kit.fontawesome.com/251ba23b96.js" crossorigin="anonymous"></script>
+    <script type="module" defer src="index.js"></script>
+    <title>Inmobiliaria Finar LTDA</title>
+</head>
+<body>  
+    <header class="header">
+        <nav class="nav">
+            <div class="title-container">
+                <h1>
+                    <img class="nav-logo" src="img/Logo_inmobiliaria_FINAR.png" width="100" alt=""><a href="#" class="logo nav-link">Inmobiliaria Finar</a>
+                </h1>
+                <span class="menu-toggle"><h2>Menu</h2></span>
+                <button class="nav-toggle"><i class="fa-solid fa-bars" aria-label="Abrir-menu"></i></button><span class="menu-toggle">
+            </div>
+            <div>
+                <ul class="nav-menu">
+                    <li class="nav-menu-item">
+                        <span class="arrow-down_submenu"><i class="fa-solid fa-chevron-down"></i></span>
+                        <a href="#" class="nav-menu-link"><input type="checkbox" class="dropdown_check" id="check1">Inmuebles</a>
+                        <span class="arrow-down"><i class="fa-solid fa-chevron-down"></i></span>
+                        <ul class="nav-sub-menu" id="submenu-inmuebles">
+                            <span><li class="nav-submenu-item"><a href="#" class="nav-submenu-link">Venta<i class="fa-solid fa-house"></i></a></li></span>
+                            <span><li class="nav-submenu-item"><a href="#" class="nav-submenu-link">Arriendo<i class="material-symbols-outlined">real_estate_agent</i></a></li></span>
+                        </ul>
+                    </li>
+                    <li class="nav-menu-item">
+                        <span class="arrow-down_submenu"><i class="fa-solid fa-chevron-down"></i></span>
+                        <a href="#" class="nav-menu-link"><input type="checkbox" class="dropdown_check" id="check2">Sobre Nosotros</a>
+                        <span class="arrow-down"><i class="fa-solid fa-chevron-down"></i></span>
+                        <ul class="nav-sub-menu ancho2" id="submenu-nosotros">
+                            <span><li class="nav-submenu-item"><a href="#" class="nav-submenu-link">Mision y Vision</a></li></span>
+                            <span><li class="nav-submenu-item"><a href="#" class="nav-submenu-link">Politicas de Tratamiento de Datos Personales</a></li></span>
+                        </ul>
+                    </li>
+                    <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-menu-link_active">Contacto</a></li>
+                    <div class="nav-red">
+                        <span><a href="#" class="social"><i class="fa-brands fa-instagram"></i></a></span>
+                        <span><a href="#" class="social"><i class="fa-brands fa-x-twitter"></i></a></span>
+                        <span><a href="#" class="social"><i class="fa-brands fa-facebook-f"></i></a></span>
+                        <span><a href="#" class="social"><i class="fa-solid fa-share-nodes"></i></a></span>
+                    </div>
+                </ul>
+            </div>  
+        </nav>
+    </header>
+    <main class="main">
+        <section class="section1">
+            <div class="slider-box">
+                 <ul>
+                     <li>
+                         <img src="/img/slider/img1.jpg" alt="Inmueble de referencia 1">
+                     </li>
+                     <li>
+                         <img src="/img/slider/img2.jpg" alt="Inmueble de referencia 2">
+                     </li>
+                     <li>
+                         <img src="/img/slider/img3.jpg" alt="Inmueble de referencia 3">
+                     </li>
+                     <li>
+                         <img src="/img/slider/img4.jpg" alt="Inmueble de referencia 4">
+                     </li>
+                 </ul>
+            </div>
+            <div class="containerSearch">
+                <div class="bottons">
+                    <button class="button_search f1 active">Venta<i class="fa-solid fa-house"></i></button>
+                    <button class="button_search">Arriendo<i class="material-symbols-outlined">real_estate_agent</i></button>
+                    <button class="button_search l1">Codigo<i class="fa-solid fa-barcode"></i></button>
+                </div>
+                <div class="search">
+                    <label for="inmueble" class="label_select" id="label_inmueble">Tipo de Inmueble</label>
+                    <input type="text" class="input_select" id="inmueble" readonly>
+                    <ul class="list_select" id="list_inmueble">
+                        <span><li>Casa</li></span>
+                        <span><li>Casa Campestre</li></span>
+                        <span><li>Casa Esquinera</li></span>
+                        <span><li>Apartamento</li></span>
+                        <span><li>Apartaestudio</li></span>
+                        <span><li>Lote</li></span>
+                        <span><li>Terreno</li></span>
+                    </ul>
+                    <label for="barrio" class="label_select" id="label_barrio">Barrio</label>
+                    <input type="text" class="input_select" id="barrio" readonly>
+                    <ul class="list_select" id="list_barrio">
+                        <span><li>Acacios</li></span>
+                        <span><li>San Luis</li></span>
+                        <span><li>San Miguel</li></span>
+                        <span><li>Torcoroma</li></span>
+                        <span><li>Rincon Escobal</li></span>
+                        <span><li>Atalaya</li></span>
+                        <span><li>Caobos</li></span>
+                    </ul>
+                    <h3 class="subtitulo">Rango de precios</h3>
+                    <label for="minimo" class="label_select opacityLabel" id="label_min">Minimo</label>
+                    <input type="text" class="input_select" id="minimo">
+        
+                    <label for="maximo" class="label_select opacityLabel" id="label_max">Maximo</label>
+                    <input type="text" class="input_select" id="maximo">
+        
+                    <button class="filter"><span class="material-symbols-outlined">tune</span></button>
+                    <button type="submit" class="buscar">Buscar</button>
+                </div>
+                <div class="advancedFilter">
+                    <div class="containerRange">
+                       <span class="closeFilter"><i class="fa-solid fa-x"></i></span>
+                        <label for="range" class="labelFilter supIndice">Metros Cuadrados<i class="fa-solid fa-ruler-horizontal"></i></label>
+                        <input type="range" class="range" id="range" value="65" min="45" max="2500">
+                        <input type="text" value="65" class="valorRange" id="valorRange">
+                    </div>
+                    <div class="containerRange">
+                        <label for="arrowRooms" class="labelFilter">Cantidad de cuartos<i class="fa-solid fa-door-open"></i></label>
+                        <span class="filterArrow"  id="arrowRooms"><i class="fa-solid fa-sort-down"></i></span>
+                        <button class="cantidad" id="rangeRooms">1
+                        <button class="cantidad">2
+                        <button class="cantidad">3
+                        <button class="cantidad">4
+                        <button class="cantidad">5
+                        <button class="cantidad">6
+                        <button class="cantidad">7
+                        <button class="cantidad">8
+                        <button class="cantidad">9
+                        <button class="cantidad">10
+                    </div>
+                    <div class="containerRange">
+                        <label for="arrowBathRooms" class="labelFilter">Cantidad de baños<i class="fa-solid fa-toilet"></i></label>
+                        <span class="filterArrow" id="arrowBathRooms"><i class="fa-solid fa-sort-down"></i></span>
+                        <button class="cantidad" id="rangeBathRooms">1
+                        <button class="cantidad">2
+                        <button class="cantidad">3
+                        <button class="cantidad">4
+                        <button class="cantidad">5
+                    </div>
+                    <div class="containerRange">
+                        <div class="caracteristicas">
+                            <div class="zonaResidencial">
+                                <ul>
+                                    <label for="zonaInput" class="labelZona">Area Residencial<i class="fa-regular fa-building"></i></label>
+                                    <li class="listZona">Parqueadero asignado<input type="checkbox" class="zonaInput"></li>
+                                    <li class="listZona">Porteria<input type="checkbox" class="zonaInput"></li>
+                                    <li class="listZona">Piscina<input type="checkbox" class="zonaInput"></li>
+                                    <li class="listZona">Ascensor<input type="checkbox" class="zonaInput"></li>
+                                    <li class="listZona">Gimnasio<input type="checkbox" class="zonaInput"></li>
+                                </ul>
+                            </div>
+                            <div class="zonaRural">
+                                <ul>
+                                    <label for="zonaInput" class="labelZona">Area Rural<i class="fa-solid fa-tree"></i></label>
+                                    <li class="listZona">Zonas verdes<input type="checkbox" class="zonaInput"></li>
+                                    <li class="listZona">Zona de juegos<input type="checkbox" class="zonaInput"></li>
+                                    <li class="listZona">Cancha Multiple<input type="checkbox" class="zonaInput"></li>
+                                    <li class="listZona">Zona Social<input type="checkbox" class="zonaInput"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+            </div>
+        </section>
+        <section class="section2">
+            <h2 class="destacados">Inmuebles Destacados</h2>
+            <div class="card-container">
+                <div class="card">
+                  <img src="/img/slider/img1.jpg" alt="Imagen del Inmueble" class="card-img">
+                  <h2 class="typeBuy">Venta</h2>
+                  <p class="card-price">$30.000.000</p>
+                  <div class="card-info">
+                    <h2>Casa</h2>
+                    <h3 class="card-title">Cabaña en Pamplona</h3>
+                    <ul class="card-features">
+                      <li>Habitaciones: 3</li>
+                      <li><i class="fa-solid fa-location-dot"></i>Direccion</li>
+                      <li>Baños: 2</li>
+                      <li>Superficie: 120m²</li>
+                      <li>Codigo</li>
+                    </ul>
+                    <a href="url_del_inmueble" class="card-link">Más detalles</a>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="/img/slider/img2.jpg" alt="Imagen del Inmueble" class="card-img">
+                  <h2 class="typeBuy">Venta y Arriendo</h2>
+                  <p class="card-price">$15.000.000 - $1.000.000</p>
+                  <div class="card-info">
+                    <h2>Casa</h2>
+                    <h3 class="card-title">Casa en los Patios</h3>
+                    <ul class="card-features">
+                      <li>Habitaciones: 3</li>
+                      <li><i class="fa-solid fa-location-dot"></i>Direccion</li>
+                      <li>Baños: 2</li>
+                      <li>Superficie: 120m²</li>
+                      <li>Codigo</li>
+                    </ul>
+                    <a href="url_del_inmueble" class="card-link">Más detalles</a>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="/img/slider/img3.jpg" alt="Imagen del Inmueble" class="card-img">
+                  <h2 class="typeBuy">arriendo</h2>
+                  <p class="card-price">$10.000.000</p>
+                  <div class="card-info">
+                    <h2>Apartamento</h2>
+                    <h3 class="card-title">Apartamento en San Luis</h3>
+                    <ul class="card-features">
+                      <li>Habitaciones: 3</li>
+                      <li><i class="fa-solid fa-location-dot"></i>Direccion</li>
+                      <li>Baños: 2</li>
+                      <li>Superficie: 120m²</li>
+                      <li>Codigo</li>
+                    </ul>
+                    <a href="url_del_inmueble" class="card-link">Más detalles</a>
+                  </div>
+                </div>
+              </div>
+        </section>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>
