@@ -15,7 +15,7 @@
 
     display: grid;
     gap: 5rem;
-    grid-template-columns: 20rem 20rem 20rem;
+    grid-template-columns: repeat(3 , 20rem);
     grid-auto-flow: column;
     grid-auto-columns: 10rem;
     justify-content: center;
