@@ -1,6 +1,7 @@
 @import url(/styles/header.css);
 @import url(/styles/slider-images.css);
 @import url(/styles/filter.css);
+@import url(/styles/cards.css);
 
 :root {
     --colorRedOne: #490f08;
@@ -36,141 +37,7 @@ body{
     box-shadow: inset rgba(14, 30, 37, 0.12) 0px 8px 4px -6px, inset rgba(14, 30, 37, 0.32) 0px -8px 4px -6px;
 }
 
-.destacados {
-    text-transform: uppercase;
-    font-size: 30px;
-    font-weight: bold;
-    color: var(--colorRedOne);
-    
-    text-align: center;
-    align-self: flex-end;
-}
 
-.card-container {
-    width: 98%;
-    height: 35rem;
-    justify-self: center;
-
-    display: grid;
-    gap: 5rem;
-    grid-template-columns: 20rem 20rem 20rem;
-    grid-auto-flow: column;
-    grid-auto-columns: 10rem;
-    justify-content: center;
-    align-items: center;
-
-    overflow-x: hidden;
-}
-
-.card {
-
-    width: 100%;
-    height: 80%;
-
-
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    "descripcion"
-    "caracteristicas";
-    place-items: center;
-
-    background-color: var(--colorRedTwo);
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
-    border-radius: 10px;
-    transition: all .3s;
-}
-
-.card:hover {
-    transform: scale(1.1);
-    transition: .3s;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-
-.typeBuy {
-
-    font-size: 18px;
-    font-weight: bold;
-    color: var(--colorCream);
-
-    background-color: var(--colorRedOne);
-    margin: 1em 0 0 1em;
-    padding: 5px;
-    border-radius: 10px;
-
-    align-self: flex-start;
-    justify-self: flex-start;
-    grid-area: descripcion;
-    filter: brightness(1);
-}
-
-.card img {
-    display: grid;
-    width: 95%;
-    height: 95%;
-    
-    filter: brightness(.8);
-    
-    border-radius: 10px;
-    grid-area: descripcion;
-    
-}
-
-.card p {
-    font-size: 18px;
-    font-weight: bold;
-    color: var(--colorCream);
-
-    margin: 0 0 1em 1em;
-
-    justify-self: flex-start;
-    align-self: flex-end;
-    
-    grid-area: descripcion;
-    filter: brightness(1);
-
-}
-
-.card-info {
-    width: 100%;
-    height: 100%;
-
-    display: grid;
-    grid-template-rows: 3.5rem 1fr 3rem;
-    grid-template-areas: 
-    "superior"
-    "medio"
-    "inferior";
-    gap: 10px;
-
-    grid-area: caracteristicas;
-}
-
-.card-info h2 {
-    font-size: 15px;
-    color: var(--colorCream);
-
-    margin: .5em 0 0 .5em;
-
-    grid-area: superior;
-    align-self: flex-start;
-}
-
-.card-title {
-    color: var(--colorCream);
-    font-size: 18px;
-    font-weight: bold;
-    margin-left: .5em;
-
-    grid-area: superior;
-    align-self: flex-end;
-}
-
-.card-features {
-    color: var(--colorCream);
-    display: grid;
-}
 
 
 

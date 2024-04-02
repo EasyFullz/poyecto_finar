@@ -1,0 +1,180 @@
+.destacados {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--colorRedOne);
+    
+    text-align: center;
+    align-self: flex-end;
+}
+
+.card-container {
+    width: 98%;
+    height: 35rem;
+    justify-self: center;
+
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: 20rem 20rem 20rem;
+    grid-auto-flow: column;
+    grid-auto-columns: 10rem;
+    justify-content: center;
+    align-items: center;
+
+    overflow-x: hidden;
+}
+
+.card {
+
+    width: 90%;
+    height: 80%;
+
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "descripcion"
+    "caracteristicas";
+    place-items: center;
+
+    background-color: var(--colorRedTwo);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    border-radius: 10px;
+    transition: all .3s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition: .3s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.typeBuy {
+
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--colorCream);
+
+    background-color: var(--colorRedOne);
+    margin: 1em 0 0 1em;
+    padding: 5px;
+    border-radius: 10px;
+
+    align-self: flex-start;
+    justify-self: flex-start;
+    grid-area: descripcion;
+    filter: brightness(1);
+}
+
+.card img {
+    display: grid;
+    width: 95%;
+    height: 95%;
+    
+    filter: brightness(.8);
+    
+    border-radius: 10px;
+    grid-area: descripcion;
+    
+}
+
+.card p {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--colorCream);
+
+    margin: 0 0 1em 1em;
+
+    justify-self: flex-start;
+    align-self: flex-end;
+    
+    grid-area: descripcion;
+    filter: brightness(1);
+
+}
+
+.card-info {
+    width: 96%;
+    height: 100%;
+
+    display: grid;
+    grid-template-rows: 3.5rem 1fr 3rem;
+    grid-template-areas: 
+    "superior"
+    "medio"
+    "inferior";
+    gap: 10px;
+
+    grid-area: caracteristicas;
+}
+
+.card-info h2 {
+    font-size: 15px;
+    color: var(--colorCream);
+    margin-top: .5em;
+    margin-left: .5em;
+
+    grid-area: superior;
+    align-self: flex-start;
+}
+
+.card-title {
+    color: var(--colorCream);
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: .3em;
+
+    grid-area: superior;
+    align-self: flex-end;
+}
+
+.card-features {
+    height: 100%;
+    grid-area: medio;
+    color: var(--colorCream);
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr .8fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "direccion direccion direccion"
+    "habitaciones baños superficie";
+    place-items: center;
+
+    font-size: 12px;
+    border-bottom: 1px solid var(--colorCream) ;
+}
+
+.card-features li:first-child {
+    margin-left: .3em;
+    font-size: 16px;
+    align-self: center;
+    justify-self: flex-start;
+    text-align: start;
+    grid-area: direccion;
+}
+
+.card-link {
+    width: 34.5%;
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: bold;
+
+    grid-area: inferior;
+    align-self: center;
+
+    margin-left: .5em;
+    text-decoration: none;
+    background-color: var(--colorCream);
+    color: var(--colorRedOne);
+}
+
+.codigo-Inmueble {
+    grid-area: inferior;
+    align-self: center;
+    justify-self: flex-end;
+    margin-right: .5em;
+    color: var(--colorCream);
+}
+
