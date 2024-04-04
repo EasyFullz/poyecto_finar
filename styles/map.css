@@ -1,0 +1,111 @@
+.map-title {
+    color: var(--colorRedOne);
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    align-self: center;
+}
+
+.container-map {
+    width: 85%;
+    height: auto; 
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-self: center;
+    padding: 20px; 
+}
+
+.container-ubicacion {
+    max-width: 100%;
+    height: auto; 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: flex-start; 
+    justify-self: center;
+}
+
+.image-wrapper {
+    height: 25rem;
+    flex: 21%; 
+    margin: 5px; 
+    transition: all .3s;
+    position: relative; 
+    overflow: hidden; 
+    border-radius: 10px;
+}
+
+.image-wrapper:first-child {
+    flex: 55%;
+}
+
+.image-wrapper:last-child {
+    flex: 55%;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    transition: transform .3s ease;
+    object-fit: cover; 
+    filter: brightness(.7);
+    cursor: pointer;
+}
+
+.image-wrapper p {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--colorCream);
+
+    position: absolute;
+    left: 50%;
+    bottom: 18%;
+    transform: translate(-50% , -10%);
+    z-index: 1;
+}
+
+.image-wrapper span {
+    font-size: 20px;
+    color: var(--colorCream);
+
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50% , -10%);
+    z-index: 1;
+}
+
+.image-wrapper:hover {
+    z-index: 1; 
+}
+
+.image-wrapper:hover img{
+    transform: scale(1.1); 
+    filter: brightness(.8);
+}
+
+.button-map {
+    color: var(--colorRedTwo);
+    font-size: 50px;
+    width: auto;
+    height: auto;
+    align-self: center;
+    justify-self: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.map {
+    width: 100%;
+    height: 30rem;
+    transition: all .3s;
+}
+
+
+
+
+
+
+
