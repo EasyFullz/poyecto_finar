@@ -23,7 +23,9 @@ import { cardCarrusel } from './scripts/cards.js';
 
 cardCarrusel();
 
+import { deplegarMapa } from './scripts/map.js';
 
+deplegarMapa();
 
 
 
