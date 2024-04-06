@@ -28,6 +28,11 @@ import { deplegarMapa } from './scripts/map.js';
 deplegarMapa();
 
 
+document.getElementById("currentYear").textContent = new Date().getFullYear();
+
+
+
+
 
 
 

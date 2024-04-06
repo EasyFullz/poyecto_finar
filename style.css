@@ -3,6 +3,8 @@
 @import url(/styles/filter.css);
 @import url(/styles/cards.css);
 @import url(/styles/map.css);
+@import url(/styles/elegirnos.css);
+@import url(/styles/footer.css);
 
 :root {
     --colorRedOne: #490f08;
@@ -44,6 +46,17 @@ body{
     grid-template-columns: 1fr; 
     grid-template-rows: 6rem 1fr;
     text-align: center;
+}
+
+.section4 {
+    height: auto;
+    display: grid;
+    background-color: #f7f7f7;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 6rem 1fr;
+    text-align: center;
+    box-shadow: inset rgba(14, 30, 37, 0.12) 0px 8px 4px -6px, inset rgba(14, 30, 37, 0.32) 0px -8px 4px -6px;
+    padding-bottom: 45px;
 }
 
 

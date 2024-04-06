@@ -39,6 +39,7 @@
     cursor: pointer;
     transition: .3s;
     transition: all .3s;
+    box-shadow: inset rgba(14, 30, 37, 0.12) 0px 8px 4px -6px, inset rgba(14, 30, 37, 0.32) 0px -8px 4px -6px;
 }
 
 .button_search i{
@@ -96,7 +97,7 @@
 .search{
     background-color: #5c120a;
     width: 58rem;
-    height: 12vh;
+    height: 100%;
 
     display: grid;
     grid-template-columns: 1.6fr 1fr 1fr 1fr .3fr 1fr;
@@ -111,6 +112,7 @@
 
     border-radius: 40px;
     border: 1px solid #490f08;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     z-index: 1;
 }
 
@@ -136,6 +138,7 @@
     grid-area: tipo-de-inmueble;
     align-self: center;
     justify-self: center;
+    box-shadow: inset rgba(14, 30, 37, 0.12) 0px 8px 4px -6px, inset rgba(14, 30, 37, 0.32) 0px -8px 4px -6px;
 }
 
 .input_select:nth-of-type(2){
@@ -225,13 +228,13 @@
 }
 
 .list_select{
-    margin-top: 16em;
-    width: 26.5vh;
+    margin-top: 8%;
+    width: 13%;
     max-height: 0;
     color: #f9edc8;
     background-color: #490f08;
     position: absolute;
-    left: 20%;
+    left: 21%;
     top: 25%;
     gap: 1rem;
     display: flex;
@@ -332,9 +335,9 @@
 }
 
 .advancedFilter{
-    width: 110vh;
-    height: 57vh;
-    margin-top: 51%;
+    width: 50rem;
+    height: 26rem;
+    margin-top: 50%;
 
     display: grid;
     grid-template-columns: 1fr .7fr;
@@ -372,7 +375,7 @@
     margin-top: 1.5em;
     background: #490f08;
     width: 95%;
-    height: 12vh;
+    height: 80%;
     border: 1px solid #5c120a;
     border-radius: 20px;
     position: relative;
@@ -656,8 +659,8 @@ input[type=range]::-ms-fill-lower {
 }
 
 .buscar{
-    width: 15vh;
-    height: 5vh;
+    width: 85%;
+    height: 41%;
     font-weight: 800;
     position: relative;
     color: #6C140E;
@@ -669,6 +672,12 @@ input[type=range]::-ms-fill-lower {
     grid-area: buscar;
     align-self: center;
     justify-self: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.buscar:active {
+    transform: translateY(4px);
+    
 }
 
 .buscar:hover{

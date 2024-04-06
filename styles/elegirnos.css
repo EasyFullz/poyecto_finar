@@ -1,0 +1,75 @@
+.container-eleccion {
+    width: 75%;
+    height: 30rem;
+    
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 50px;
+}
+
+.title-eleccion{
+    color: var(--colorRedOne);
+    font-size: 30px;
+    font-weight: bold;
+
+    align-self: center;
+}
+
+.porque-elegirnos {
+    width: 85%;
+    height: 95%;
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    grid-template-rows: .9fr 5rem 12rem;
+    background: var(--colorRedTwo);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    cursor: pointer;
+}
+
+.porque-elegirnos span {
+    font-size: 90px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 50%;
+
+    align-self: center;
+    justify-self: center;
+
+    color: var(--colorCream);
+    background-color: var(--colorRedOne);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all .3s;
+}
+
+.porque-elegirnos:hover span {
+    color: var(--colorRedOne);
+    background-color: var(--colorCream);
+    transition: all .3s;
+}
+
+.porque-elegirnos h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    height: 100%;
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--colorCream);
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    border-bottom: 1px solid var(--colorCream);
+}
+
+.porque-elegirnos p {
+    width: 80%;
+    font-size: 15px;
+    color: var(--colorCream);
+    align-self: center;
+    justify-self: center;
+}
