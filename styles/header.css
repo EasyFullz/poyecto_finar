@@ -1,8 +1,8 @@
 /*estilos para el nav*/
 
 .header{
-    background-image: linear-gradient(to bottom, #6C140E, #490f08);
-    height: 80px;
+    background-color: var(--colorRedTwo);
+    display: grid;
     position: fixed;
     width: 100%;
     top: 0;
@@ -14,9 +14,9 @@
 
 .nav{
     display: flex;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
     z-index: 2;
 }
 
@@ -28,10 +28,10 @@
 
 .logo{
     font-size: 30px;
-    line-height: 80px;
     text-transform: uppercase;
     font-weight: bold;
     position: relative;
+    text-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .nav-link{

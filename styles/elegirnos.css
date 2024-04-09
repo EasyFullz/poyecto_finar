@@ -57,7 +57,7 @@
     align-items: center;
     width: 85%;
     height: 100%;
-    font-size: 25px;
+    font-size: clamp(15px, 2vw, 25px);
     font-weight: bold;
     color: var(--colorCream);
     align-self: center;

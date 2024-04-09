@@ -40,6 +40,7 @@
     transition: .3s;
     transition: all .3s;
     box-shadow: inset rgba(14, 30, 37, 0.12) 0px 8px 4px -6px, inset rgba(14, 30, 37, 0.32) 0px -8px 4px -6px;
+    font-family: "Josefin Sans", sans-serif;
 }
 
 .button_search i{
@@ -382,11 +383,13 @@
     grid-area: Metros-Cuadrados;
     align-self: center;
     justify-self: center;
+    box-shadow: inset rgba(14, 30, 37, 0.12) 0px 8px 4px -6px, inset rgba(14, 30, 37, 0.32) 0px -8px 4px -6px;
 }
 
 .containerRange:nth-of-type(2){
     margin-top: 0;
     width: 95%;
+    height: 100%;
     grid-area: Cantidad-de-Cuartos;
     justify-self: end;
 }
@@ -673,6 +676,7 @@ input[type=range]::-ms-fill-lower {
     align-self: center;
     justify-self: center;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    font-family: "Josefin Sans", sans-serif;
 }
 
 .buscar:active {
