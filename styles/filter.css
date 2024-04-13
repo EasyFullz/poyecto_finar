@@ -6,7 +6,7 @@
 
     display: grid;
     grid-template-columns: .5fr;
-    grid-template-rows: 3rem 6rem 0;
+    grid-template-rows: 3rem 6rem 2rem;
     justify-content: center;
     align-items: center;
     
@@ -101,15 +101,14 @@
     height: 100%;
 
     display: grid;
-    grid-template-columns: 1.6fr 1fr 1fr 1fr .3fr 1fr;
+    grid-template-columns: 1.5fr 1.5fr 1fr 1fr .3fr 1fr;
     grid-row: 1fr;
     grid-template-areas: 
     "tipo-de-inmueble barrio minimo maximo filtro buscar" 
     "tipo-de-inmueble barrio minimo maximo filtro buscar";
-    gap: 5px;
 
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 
     border-radius: 40px;
     border: 1px solid #490f08;
@@ -122,8 +121,8 @@
 .input_select{
     text-align: center;
     font-size: 20px;
-    width: 12.5rem;
-    height: 5vh;
+    width: 85%;
+    height: 40%;
     border: none;
     border-radius: 20px;
     outline: none;
@@ -144,28 +143,20 @@
 
 .input_select:nth-of-type(2){
     grid-area: barrio;
-    align-self: center;
-    justify-self: center;
 }
 
 .input_select:nth-of-type(3){
     font-size: 15px;
     top: 4px;
-    width: 8.5rem;
-    height: 4vh;
+    height: 30%;
     grid-area: minimo;
-    align-self: center;
-    justify-self: center;
 }
 
 .input_select:last-of-type{
     font-size: 15px;
     top: 4px;
-    width: 8.5rem;
-    height: 4vh;
+    height: 30%;
     grid-area: maximo;
-    align-self: center;
-    justify-self: center;
 }
  
 .input_select_active{
@@ -173,6 +164,7 @@
 }
    
 .label_select{
+    font-size: clamp(13px, 6vw, 15px);
     color: #f9edc8;
     z-index: 1;
     transition: .3s;
@@ -689,4 +681,254 @@ input[type=range]::-ms-fill-lower {
     border-color: #f9edc8;
     color: #f9edc8;
     transition: all .3s;
+}
+
+/*Celulares*/
+
+@media(max-width:768px) {
+    .containerSearch {
+        width: auto;
+        height: auto;
+    
+        display: grid;
+        grid-template-columns: 26rem;
+        grid-template-rows: 3rem 12rem 2rem;
+        
+        place-items: center;
+        grid-area: section-1;
+        z-index: 1;
+    }  
+
+    .bottons{
+        margin-left: 0;
+        margin-top: 16px;
+        display: grid;
+        grid-template-columns: repeat(3 , 125px);
+        height: 100%;
+    }
+    
+    .button_search{
+        color: var(--colorCream);
+        background-color: var(--colorRedOne);
+        border: 1px solid var(--colorRedOne);
+    }
+
+    .active{
+        transform: translateY(-8px);
+        left: 0%;
+        border-radius: 20px 20px 0 0;
+        background-color: #5c120a;
+        transition: all .3s;
+    }
+
+    .search{
+        background: var(--colorRedTwo);
+        width: 100%;
+        height: 100%;
+    
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1.5fr 1.5fr 1.2fr;
+        grid-template-areas: 
+        "tipo-de-inmueble barrio" 
+        "minimo maximo"
+        "filtro buscar";
+    
+        border-radius: 20px;
+        
+    }
+
+    .input_select{
+        width: 85%;
+        height: 60%;
+        border: none;
+        border-radius: 20px;
+        outline: none;
+        background-color: var(--colorRedOne);
+        color: #f9edc8;
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        overflow: hidden;
+        border: 1px solid var(--colorRedOne);
+        transition: border-color 0.3s;
+    
+        grid-area: tipo-de-inmueble;
+        align-self: center;
+        justify-self: center;
+        box-shadow: inset rgba(14, 30, 37, 0.12) 0px 8px 4px -6px, inset rgba(14, 30, 37, 0.32) 0px -8px 4px -6px;
+    }
+    
+    .input_select:nth-of-type(3),
+    .input_select:last-of-type{
+        top: 4px;
+        width: 85%;
+        height: 60%;
+        grid-area: minimo;
+    }
+    
+    .input_select:last-of-type{
+        grid-area: maximo;
+    }
+
+    .input_select_active{
+        border-color: #f9edc8;
+    }
+ 
+    .label_active{
+        transform: translate(-15px, -24px);
+        transition: .3s;
+        background-image: linear-gradient(to bottom, var(--colorRedTwo), var(--colorRedOne));
+        font-size: 13px;
+        padding: 0 5px 0 5px;
+    }
+    
+    .label_active:nth-of-type(2){
+        transform: translate(-40px, -24px);
+    }
+    
+    .label_active:nth-of-type(3){
+        font-size: 13px;
+        transform: translate(-50px, -20px);
+    }
+    
+    .label_active:nth-of-type(4){
+        font-size: 13px;
+        transform: translate(-45px, -19px);
+    }
+
+    .filter{
+        justify-self: flex-end;
+    }
+
+    .advancedFilter{
+        width: 30rem;
+        height: 33rem;
+        margin-top: 0;
+    
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 6rem 6rem 6rem 11rem;
+    
+        grid-template-areas: 
+        "Metros-Cuadrados"
+        "Cantidad-de-Cuartos"
+        "Cantidad-de-Baños"
+        "Caracteristicas"; 
+    
+        text-align: center;
+        justify-content: center;
+    
+        background-color: #5c120a;
+        border-radius: 30px;
+        gap: 15px;
+    
+        transform-origin: calc(100% - 120px) 10px;
+        transform: scale(0);
+        opacity: 0;
+        transition: all .3s;
+        z-index: 1;
+    }
+    
+    .advancedFilter_Active {
+        transform: scale(1);
+        opacity: 1;
+        transition: all .3s;
+        border: 4px solid #490f08;
+    }
+    
+    .containerRange{
+        margin-top: 1.5em;
+        background: #490f08;
+        width: 95%;
+        height: 80%;
+        border: 1px solid #5c120a;
+        border-radius: 20px;
+        position: relative;
+        grid-area: Metros-Cuadrados;
+        align-self: center;
+        justify-self: center;
+        box-shadow: inset rgba(14, 30, 37, 0.12) 0px 8px 4px -6px, inset rgba(14, 30, 37, 0.32) 0px -8px 4px -6px;
+    }
+    
+    .containerRange:nth-of-type(2){
+        margin-top: 0;
+        width: 95%;
+        height: 100%;
+        grid-area: Cantidad-de-Cuartos;
+        justify-self: center;
+    }
+    
+    .containerRange:nth-child(3){
+        margin-top: 0;
+        width: 92%;
+        height: 12vh;
+        grid-area: Cantidad-de-Baños;
+        justify-self: center;
+    }
+    
+    .containerRange:last-of-type {
+        margin-top: 0;
+        height: 21vh;
+        grid-area: Caracteristicas;
+    }
+    
+    .labelFilter{
+        color: #f9edc8;
+        margin-top: .5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .labelFilter i {
+        margin-left: 3px;
+    }
+    
+    .filterArrow{
+        color: #f9edc8;
+        width: 20px;
+        height: 20px;
+        left: 1.3vh;
+        position: absolute;
+        border-image: 2px solid #490f08;
+        transition: transform .3s ease;
+    }
+    
+    .range {
+        -webkit-appearance: none;
+        appearance: none;
+      margin: 20px 0;
+      width: 80%;
+      border-radius: 20px;
+    }
+    
+    .range:focus{
+        outline: none;
+    }
+    
+    .range::-webkit-slider-runnable-track {
+        width: 100%;
+        height: 10px;
+        cursor: pointer;
+        background: #f9edc8;
+        border-radius: 50px;
+        border: 1px solid #490f08;
+    }
+    
+    .range::-webkit-slider-thumb {
+        border: 1px solid #f9edc8;
+        height: 25px;
+        width: 15px;
+        border-radius: 30%;
+        background: #490f08;
+        cursor: grab;
+        -webkit-appearance: none;
+        margin-top: -7.5px;
+    }
+
+    .buscar{
+        width: 50%;
+        height: 70%;
+        justify-self: flex-start;
+    }
 }
