@@ -10,7 +10,7 @@
 }
 
 .title-eleccion{
-    color: var(--colorRedOne);
+    color: var(--color1);
     font-size: 30px;
     font-weight: bold;
 
@@ -24,7 +24,7 @@
     align-self: center;
     justify-self: center;
     grid-template-rows: .9fr 5rem 12rem;
-    background: var(--colorRedTwo);
+    background: var(--color2);
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     cursor: pointer;
@@ -39,15 +39,15 @@
     align-self: center;
     justify-self: center;
 
-    color: var(--colorCream);
-    background-color: var(--colorRedOne);
+    color: var(--color3);
+    background-color: var(--color1);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     transition: all .3s;
 }
 
 .porque-elegirnos:hover span {
-    color: var(--colorRedOne);
-    background-color: var(--colorCream);
+    color: var(--color1);
+    background-color: var(--color3);
     transition: all .3s;
 }
 
@@ -59,17 +59,17 @@
     height: 100%;
     font-size: clamp(15px, 2vw, 25px);
     font-weight: bold;
-    color: var(--colorCream);
+    color: var(--color3);
     align-self: center;
     justify-self: center;
     text-align: center;
-    border-bottom: 1px solid var(--colorCream);
+    border-bottom: 1px solid var(--color3);
 }
 
 .porque-elegirnos p {
     width: 80%;
     font-size: 15px;
-    color: var(--colorCream);
+    color: var(--color3);
     align-self: center;
     justify-self: center;
 }

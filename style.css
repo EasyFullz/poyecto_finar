@@ -7,10 +7,10 @@
 @import url(/styles/footer.css);
 
 :root {
-    --colorRedOne: #490f08;
-    --colorRedTwo: #5c120a;
+    --color1: #4E6151;;
+    --color2: #5E8C61;;
     
-    --colorCream: #f9edc8;
+    --color3: #FFFFFF;
 }
 
 /*general*/

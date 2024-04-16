@@ -1,7 +1,7 @@
 /*estilos para el nav*/
 
 .header{
-    background-color: var(--colorRedTwo);
+    background-color: var(--color2);
     display: grid;
     position: fixed;
     width: 100%;
@@ -34,12 +34,12 @@
 }
 
 .nav-link{
-    color: #f9edc8;
+    color: var(--color3);
     text-decoration: none;
 }
 
 .nav-toggle{
-   color: #f9edc8;
+   color: var(--color2);
    background:none;
    border: none;
    font-size: 30px;
@@ -69,7 +69,7 @@
     border-radius: 3px;
     transition: 0.5s;
     text-decoration: none;
-    color: #f9edc8;
+    color: var(--color3);
 }
 
 .nav-menu-link:last-of-type{
@@ -77,13 +77,13 @@
 }
 
 .nav-menu-link_active{
-    background-color: #490f08;
+    background-color: var(--color1);
     border-radius: 10px;
 }
 
 .arrow-down{
     display: inline;
-    color: #F3DFA2;
+    color: var(--color3);
 }
 
 .arrow-down_submenu{
@@ -133,7 +133,7 @@
 .nav-submenu-link{
     display: flex;
     align-items: center;
-    color: #f9edc8;
+    color: var(--color2);
     text-decoration: none;
 }
 
@@ -147,7 +147,7 @@
 
     .menu-toggle{
         font-size: 15px;
-        color: #f9edc8;
+        color: var(--color2);
         align-items: center;
         display: none;
         margin: 0px 8px 0 10px;
@@ -174,7 +174,7 @@
     }
 
     .header{
-        background-color: var(--colorRedTwo);
+        background-color: var(--color2);
         position: fixed;
         width: 100%;
         top: 0;
@@ -200,7 +200,7 @@
     .nav-menu{
         flex-direction: column;
         align-items: flex-end;
-        background-color: var(--colorRedOne);
+        background-color: var(--color1);
         position: fixed;
         top: 60px;
         width: 70%;
@@ -214,7 +214,7 @@
     
     .nav-menu-item{
         line-height: 70px;
-        border-bottom: 1px solid var(--colorCream);
+        border-bottom: 1px solid var(--color3);
         width: 90%;
 
     }
@@ -230,7 +230,7 @@
     }
 
     .menu-toggle{
-        color: var(--colorCream);
+        color: var(--color3);
         font-size: 20px;
         opacity: 0;
         position: absolute;
@@ -264,7 +264,7 @@
 
     .arrow-down_submenu{
         display: inline;
-        color: var(--colorCream);
+        color: var(--color3);
     }
 
     .nav-sub-menu{
@@ -272,7 +272,7 @@
         width: 90%;
         height: auto;
         padding: 0;
-        background-color: var(--colorRedOne);
+        background-color: var(--color1);
         position: relative;
         gap: 1rem;
         line-height: 20px;
@@ -294,7 +294,7 @@
     
 
     .nav-submenu-link{
-        color: var(--colorCream);
+        color: var(--color3);
         text-decoration: none;
     }
 }

@@ -9,13 +9,13 @@
     place-items: center;
     place-content: center;
     gap: 15px;
-    background: var(--colorRedTwo);
+    background: var(--color2);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .container-social h2 {
     font-size: 20px;
-    color: var(--colorCream);
+    color: var(--color3);
     font-weight: bold;
     grid-area: siguenos;
     text-align: center;
@@ -41,7 +41,7 @@
     justify-content: center;
     align-items: center;
     grid-template-columns: 1fr 1fr 1fr;
-    background: var(--colorRedOne);
+    background: var(--color1);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
@@ -51,11 +51,11 @@
     height: 85%;
     display: grid;
     grid-template-rows: repeat(4 , 1fr);
-    border-right: 1px solid var(--colorCream);
+    border-right: 1px solid var(--color3);
 }
 
 .footer-content li {
-    color: var(--colorCream);
+    color: var(--color3);
     font-size: 15px;
     align-self: center;
     cursor: pointer;
@@ -63,7 +63,7 @@
 }
 
 .footer-content li:first-of-type {
-    color: var(--colorCream);
+    color: var(--color3);
     font-size: 20px;
     font-weight: bold;
     align-self: center;
@@ -78,14 +78,14 @@
 }
 
 .footer-credits li {
-    color: var(--colorCream);
+    color: var(--color3);
     font-size: 15px;
     align-self: center;
     justify-self: center;
 }
 
 .footer-credits li:first-of-type {
-    color: var(--colorCream);
+    color: var(--color3);
     font-size: 30px;
     font-weight: bold;
 }
@@ -102,7 +102,7 @@
 }
 
 .footer-rights p {
-    color: var(--colorCream);
+    color: var(--color3);
 }
 
 

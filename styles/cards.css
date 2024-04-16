@@ -5,7 +5,7 @@
     
     text-align: center;
     align-self: flex-end;
-    color: var(--colorCream);
+    color: var(--color3);
 }
 
 .destacados {
@@ -19,7 +19,7 @@
       linear-gradient(90deg,#0004 var(--d),#0000 0 calc(100% - var(--d)),#0004 0) 
       50%/calc(100% - 2*var(--s)) 100% no-repeat;
     clip-path: polygon(0 0,var(--s) 0,calc(var(--s) + var(--d)) var(--d),calc(100% - var(--s) - var(--d)) var(--d),calc(100% - var(--s)) 0,100% 0,calc(100% - var(--c)) calc(50% - var(--d)/2),100% calc(100% - var(--d)),calc(100% - var(--s)) calc(100% - var(--d)),calc(100% - var(--s) - var(--d)) 100%,calc(var(--s) + var(--d)) 100%,var(--s) calc(100% - var(--d)),0 calc(100% - var(--d)),var(--c) calc(50% - var(--d)/2));
-    background-color: var(--colorRedTwo); /* the main color */
+    background-color: var(--color2); /* the main color */
     width: fit-content;
 }
 
@@ -36,7 +36,7 @@
 .prev {
     width: 50px;
     font-size: 40px;
-    color: var(--colorRedOne);
+    color: var(--color1);
     background: none;
     border: none;
     left: 0;
@@ -46,7 +46,7 @@
 .next {
     width: 50px;
     font-size: 40px;
-    color: var(--colorRedOne);
+    color: var(--color1);
     background: none;
     border: none;
     right: 0;
@@ -84,7 +84,7 @@
     "caracteristicas";
     place-items: center;
 
-    background-color: var(--colorRedTwo);
+    background-color: var(--color2);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
     border-radius: 10px;
@@ -101,9 +101,9 @@
 
     font-size: 18px;
     font-weight: bold;
-    color: var(--colorCream);
+    color: var(--color3);
 
-    background-color: var(--colorRedOne);
+    background-color: var(--color1);
     margin: 1em 0 0 1em;
     padding: 5px;
     border-radius: 10px;
@@ -129,7 +129,7 @@
 .card p {
     font-size: 18px;
     font-weight: bold;
-    color: var(--colorCream);
+    color: var(--color3);
 
     margin: 0 0 1em 1em;
 
@@ -158,7 +158,7 @@
 
 .card-info h2 {
     font-size: 15px;
-    color: var(--colorCream);
+    color: var(--color3);
     margin-top: .5em;
     margin-left: .5em;
 
@@ -167,7 +167,7 @@
 }
 
 .card-title {
-    color: var(--colorCream);
+    color: var(--color3);
     font-size: 18px;
     font-weight: bold;
     margin-left: .3em;
@@ -179,7 +179,7 @@
 .card-features {
     height: 100%;
     grid-area: medio;
-    color: var(--colorCream);
+    color: var(--color3);
     display: grid;
     gap: 5px;
     grid-template-columns: 1fr .8fr 1fr;
@@ -190,7 +190,7 @@
     place-items: center;
 
     font-size: 12px;
-    border-bottom: 1px solid var(--colorCream) ;
+    border-bottom: 1px solid var(--color3) ;
 }
 
 .card-features li:first-child {
@@ -213,8 +213,8 @@
 
     margin-left: .5em;
     text-decoration: none;
-    background-color: var(--colorCream);
-    color: var(--colorRedOne);
+    background-color: var(--color3);
+    color: var(--color1);
 }
 
 .codigo-Inmueble {
@@ -222,6 +222,6 @@
     align-self: center;
     justify-self: flex-end;
     margin-right: .5em;
-    color: var(--colorCream);
+    color: var(--color3);
 }
 
