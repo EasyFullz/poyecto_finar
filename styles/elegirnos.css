@@ -10,7 +10,7 @@
 }
 
 .title-eleccion{
-    color: var(--color1);
+    color: var(--primary-100);
     font-size: 30px;
     font-weight: bold;
 
@@ -24,10 +24,11 @@
     align-self: center;
     justify-self: center;
     grid-template-rows: .9fr 5rem 12rem;
-    background: var(--color2);
+    background: var(--primary-100);
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     cursor: pointer;
+    transition: .3s;
 }
 
 .porque-elegirnos span {
@@ -39,15 +40,20 @@
     align-self: center;
     justify-self: center;
 
-    color: var(--color3);
-    background-color: var(--color1);
+    color: var(--primary-300);
+    background-color: var(--primary-200);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     transition: all .3s;
 }
 
+.porque-elegirnos:hover {
+    background-color: var(--primary-200);
+    transition: .3s;
+}
+
 .porque-elegirnos:hover span {
-    color: var(--color1);
-    background-color: var(--color3);
+    color: var(--primary-200);
+    background-color: var(--primary-300);
     transition: all .3s;
 }
 
@@ -59,17 +65,17 @@
     height: 100%;
     font-size: clamp(15px, 2vw, 25px);
     font-weight: bold;
-    color: var(--color3);
+    color: var(--primary-300);
     align-self: center;
     justify-self: center;
     text-align: center;
-    border-bottom: 1px solid var(--color3);
+    border-bottom: 1px solid var(--primary-300);
 }
 
 .porque-elegirnos p {
     width: 80%;
     font-size: 15px;
-    color: var(--color3);
+    color: var(--primary-300);
     align-self: center;
     justify-self: center;
 }

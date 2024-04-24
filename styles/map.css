@@ -1,5 +1,5 @@
 .map-title {
-    color: var(--color1);
+    color: var(--primary-200);
     font-size: 30px;
     font-weight: bold;
     align-self: center;
@@ -61,7 +61,7 @@
 .image-wrapper p {
     font-size: 25px;
     font-weight: bold;
-    color: var(--color3);
+    color: var(--primary-300);
 
     position: absolute;
     left: 50%;
@@ -72,7 +72,7 @@
 
 .image-wrapper span {
     font-size:  17px;
-    color: var(--color3);
+    color: var(--primary-300);
 
     position: absolute;
     left: 50%;
@@ -91,7 +91,7 @@
 }
 
 .button-map {
-    color: var(--color1);
+    color: var(--primary-300);
     font-size: 50px;
 
     grid-area: map;
@@ -104,7 +104,7 @@
 
     width: 5rem;
     height: 80px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: var(--primary-100);
     border: none;
     border-radius: 50%;
     cursor: pointer;;
@@ -116,8 +116,8 @@
 }
 
 .button-map:hover {
-   background-color: var(--color1);
-   color: var(--color3); 
+   background-color: var(--primary-100);
+   color: var(--primary-300); 
    transition: all .3s ease-in-out;
 }
 
