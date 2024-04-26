@@ -6,8 +6,8 @@ export const cardCarrusel = () => {
         const prevButton = document.querySelector('.prev'); 
       
         // Considerando el ancho de la tarjeta y el gap
-        const cardWidth = 100; // Ancho de la tarjeta (rem)
-        const gap = 5; // Espacio entre tarjetas (rem)
+        const cardWidth = 16; // Ancho de la tarjeta (rem)
+        const gap = 2; // Espacio entre tarjetas (rem)
         const scrollAmount = cardWidth + gap; // Ajustar si es necesario
       
         // Convertir rem a px para el desplazamiento

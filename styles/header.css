@@ -195,7 +195,7 @@
         background-color: var(--primary-200);
         position: fixed;
         top: 60px;
-        width: 70%;
+        width: 40%;
         padding: 20px 0;
         height: calc(100% - 60px);
         overflow-y: auto;
@@ -215,6 +215,7 @@
         padding: 10px 5px 5px 5px;
         background-color: var(--primary-100);
         border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
 
     .nav-toggle{
@@ -273,6 +274,7 @@
         height: auto;
         padding: 0;
         background-color: var(--primary-200);
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         position: relative;
         gap: 1rem;
         line-height: 20px;
