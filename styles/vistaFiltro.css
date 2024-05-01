@@ -1,9 +1,157 @@
-
-.container-search {
-    max-width: 60%;
-    height: 1000px;
-    background-color: aqua;
+main {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "busqueda" "mapa";
 }
+.container-search {
+    max-width: 100%;
+    height: 650px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr;
+}
+
+.search-filter {
+    display: grid;
+    grid-template-rows: repeat(2 , 1fr);
+    grid-template-areas: 
+    "buscar"
+    "filtros";
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0 20px 0;
+}
+
+.search-filter input {
+    grid-area: buscar;
+    background-color: white;
+    width: 620px;
+    height: 30px;
+    padding: 0 10px 0 10px;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid transparent;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.search-filter i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 20px 20px 0px;
+    justify-self: flex-end;
+    text-align: center;
+    width: 40px;
+    height: 100%;
+    grid-area: buscar;
+    background-color: var(--primary-100);
+    color: var(--primary-300);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.filtros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 20px 0 20px;
+}
+
+.filtros span  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 3px;
+    width: 80px;
+    height: 20px;
+    color: var(--primary-300);
+    background-color: var(--primary-100);
+    border-radius: 20px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.filtros span i {
+    width: auto;
+    display: none;
+    transition: .3s;
+}
+
+.filtros span:hover i {
+    display: flex;
+    transition: .3s;
+}
+
+.filtros span:hover {
+    width: 100px;
+    transition: all .3s;
+}
+
+.add-filter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 3px;
+    max-width: 30px;
+    outline: none;
+    border: none;
+    height: auto;
+    color: var(--primary-300);
+    background-color: var(--primary-100);
+    border-radius: 50%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.add-filter:hover {
+    transform: scale(1.2);
+    transition: all .3s;
+}
+
+.card-container-filter {
+    width: 100%;
+    height: auto;
+    padding: 20px 0px 20px 0px;
+    
+    place-items: center;
+    justify-content: center;
+    align-items: flex-start;
+
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 20rem));
+    position: relative;
+
+    overflow-x: auto;
+}
+
+.card-filter {
+    width: 300px;
+    height: 400px;
+    
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "descripcion"
+    "caracteristicas";
+    place-items: center;
+
+    background-color: var(--primary-100);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    border-radius: 10px;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.card-filter:hover {
+    transform: scale(1);
+    background-color: var(--primary-200);
+}
+
